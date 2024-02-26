@@ -1,9 +1,37 @@
 <script>
+import axios from 'axios';
+export default {
+  name: 'AppMain',
+  data() {
 
+  },
+  methods: {
+    getProject() {
+      axios.get('http://127.0.0.1:8000/api/projects', {
+        params: {
+
+        }
+      })
+        .then(function (response) {
+          // handle success
+          console.log(response);
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        });
+    }
+  },
+  created() {
+    this.getProject()
+  },
+}
 </script>
 
-<template></template>
+<template>
+  <main>
+    main
+  </main>
+</template>
 
-<style lang="scss" scoped>
-@use './style/general.scss' as *;
-</style>
+<style lang="scss" scoped></style>

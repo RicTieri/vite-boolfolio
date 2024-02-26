@@ -2,8 +2,9 @@
 
 </script>
 
-<template></template>
+<template>
+  <header>
+  </header>
+</template>
 
-<style lang="scss" scoped>
-@use './style/general.scss' as *;
-</style>
+<style lang="scss" scoped></style>
